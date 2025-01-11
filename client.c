@@ -66,7 +66,6 @@ int main(int argc, char *argv[]) {
         }
 
         strcat(message, "\n");
-        // メッセージ送信
         if (send(sock, message, strlen(message), 0) < 0) {
             error("Send failed");
         }
